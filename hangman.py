@@ -71,6 +71,7 @@ def main():
         print("1. Easy level")
         print("2. Moderate level")
         print("3. Hard level")
+        print("4. About the game")
         ch=int(input("Enter your choice of Level:"))
         if ch==1:
             start("Easy", player)
@@ -78,6 +79,10 @@ def main():
             start("Moderate", player)
         elif ch== 3:
             start("Hard", player)
+        elif ch==4:
+            print("Easy : the user will be given the chance to select the list from which the random word will be selected (Animal, Shap, Place). This will make it easier to guess the secret word.")
+            print("Moderate: similar to Easy, the user will be given the chance to select the set from which the random word will be selected (Animal, Plant, Place) but the number of trail will be reduced to 6.")
+            print("Hard: The code will randomly select a set of words. From this set the code will randomly select a word. The uses will have no clue on the secret word. Also, the number of trails will remain at 6.")        else:
         else:
             print("Invalid choice. Please try again.")
             #continue
